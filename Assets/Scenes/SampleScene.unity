@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 509719679}
   - component: {fileID: 509719678}
   - component: {fileID: 509719677}
+  - component: {fileID: 509719681}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -419,7 +420,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e00a3c0d4eb19ff479afb4fbf8ad5d94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -463,6 +464,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &509719681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509719676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fdccd7be7f4ebf4ba8578656cb3813c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedX: 0.5
+  SpeedY: 0
 --- !u!4 &606616652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ade6ae92c91fdc74990aea659b812586, type: 3}
