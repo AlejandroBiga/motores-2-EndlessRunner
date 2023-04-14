@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0636771ab40044895fd384359a6cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
-  minSpawnTime: 5
-  maxSpawnTime: 19
-  destroyTime: 5
+  objectsToSpawn:
+  - {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
+  minSpawnTime: 3
+  maxSpawnTime: 10
 --- !u!4 &114041603
 Transform:
   m_ObjectHideFlags: 0
@@ -688,10 +688,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0636771ab40044895fd384359a6cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
-  minSpawnTime: 2
-  maxSpawnTime: 14
-  destroyTime: 5
+  objectsToSpawn:
+  - {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
+  minSpawnTime: 3
+  maxSpawnTime: 10
 --- !u!4 &977650498
 Transform:
   m_ObjectHideFlags: 0
@@ -983,10 +983,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0636771ab40044895fd384359a6cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
-  minSpawnTime: 3
-  maxSpawnTime: 10
-  destroyTime: 5
+  objectsToSpawn:
+  - {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
+  minSpawnTime: 2
+  maxSpawnTime: 6
 --- !u!4 &1645195085
 Transform:
   m_ObjectHideFlags: 0

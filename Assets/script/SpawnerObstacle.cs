@@ -4,42 +4,31 @@ using UnityEngine;
 
 public class SpawnerObstacle : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    public GameObject objectToSpawn;
+    public GameObject[] objectsToSpawn;
     public float minSpawnTime = 1f;
-    public float maxSpawnTime = 5f;
-    //tiempo de destruccion 
-    public float destroyTime = 5f;
+    public float maxSpawnTime = 3f;
 
-    private float nextSpawnTime;
-
-    void Start()
+    private void Start()
     {
-        SetNextSpawnTime();
+        StartCoroutine(SpawnObjects());
     }
 
-    void Update()
+    IEnumerator SpawnObjects()
     {
-        if (Time.time >= nextSpawnTime)
+        while (true)
         {
-            SpawnObject();
-            SetNextSpawnTime();
+            // Choose a random object to spawn
+            int index = Random.Range(0, objectsToSpawn.Length);
+            GameObject objectToSpawn = objectsToSpawn[index];
+
+            // Choose a random time delay
+            float timeDelay = Random.Range(minSpawnTime, maxSpawnTime);
+
+            // Wait for the specified time delay
+            yield return new WaitForSeconds(timeDelay);
+
+            // Spawn the object
+            Instantiate(objectToSpawn, transform.position, Quaternion.identity);
         }
-    }
-
-
-    //genera un spawn aleatorio entre el tiempo maximo y el tiempo minimo definidos arriba
-    void SetNextSpawnTime()
-    {
-        nextSpawnTime = Time.time + Random.Range(minSpawnTime, maxSpawnTime);
-    }
-
-    void SpawnObject()
-    {
-        GameObject spawnedObject = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
-        //destruir el objeto 
-        Destroy(spawnedObject, destroyTime);
-
     }
 }

@@ -13,7 +13,7 @@ public class LogicPlayer : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
     }
 
-    // moviemiento basico en lateral 
+    // basic move X
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal") * speed * Time.deltaTime;

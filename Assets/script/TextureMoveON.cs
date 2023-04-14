@@ -16,7 +16,7 @@ public class TextureMoveON : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //para poder scrolear la textura main
+        //scroll main texture 
         meshRenderer.material.mainTextureOffset = new Vector2(Time.realtimeSinceStartup * SpeedX, Time.realtimeSinceStartup * SpeedY);
     }
 }
