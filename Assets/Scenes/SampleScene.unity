@@ -154,6 +154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
+  - {fileID: 6659407577739764185, guid: a566ab0a4e08ac749845fda59f0c220b, type: 3}
+  spawnRates:
+  - 0.5
+  - 0.01
   minSpawnTime: 3
   maxSpawnTime: 10
 --- !u!4 &114041603
@@ -690,6 +694,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
+  - {fileID: 6659407577739764185, guid: a566ab0a4e08ac749845fda59f0c220b, type: 3}
+  spawnRates:
+  - 0.5
+  - 0.01
   minSpawnTime: 3
   maxSpawnTime: 10
 --- !u!4 &977650498
@@ -985,6 +993,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 5799104597701124286, guid: 1ec0cfa005daee94f9ee27153ddd6b50, type: 3}
+  - {fileID: 6659407577739764185, guid: a566ab0a4e08ac749845fda59f0c220b, type: 3}
+  spawnRates:
+  - 0.5
+  - 0.01
   minSpawnTime: 2
   maxSpawnTime: 6
 --- !u!4 &1645195085

@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnerObstacle : MonoBehaviour
 {
     public GameObject[] objectsToSpawn;
+    public float[] spawnRates; // The spawn rate of each object in the list
     public float minSpawnTime = 1f;
     public float maxSpawnTime = 3f;
 
@@ -18,7 +19,20 @@ public class SpawnerObstacle : MonoBehaviour
         while (true)
         {
             // Choose a random object to spawn
-            int index = Random.Range(0, objectsToSpawn.Length);
+            float totalSpawnRate = 0f;
+            for (int i = 0; i < objectsToSpawn.Length; i++)
+            {
+                totalSpawnRate += spawnRates[i];
+            }
+
+            float randomSpawnRate = Random.Range(0f, totalSpawnRate);
+            int index = -1;
+            while (randomSpawnRate >= 0f)
+            {
+                index++;
+                randomSpawnRate -= spawnRates[index];
+            }
+
             GameObject objectToSpawn = objectsToSpawn[index];
 
             // Choose a random time delay
