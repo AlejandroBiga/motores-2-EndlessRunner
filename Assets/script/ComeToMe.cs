@@ -18,13 +18,6 @@ public class ComeToMe : MonoBehaviour
 
     }
 
-    // compara el tag del elemento y si es player cambia de escena 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(2);
-        }
-    }
+    
 
 }
