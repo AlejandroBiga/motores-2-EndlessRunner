@@ -886,23 +886,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1645195083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0636771ab40044895fd384359a6cd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 708d3a9649686154985ebb149025ede6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToSpawn:
+  obstacles:
   - {fileID: 8191464182381381791, guid: baf58c9f8a3dcf04ba1355639469452e, type: 3}
   - {fileID: 4886329134720760934, guid: 084ba92cbbd83bb468ab70b23d21219b, type: 3}
   - {fileID: 5834744244507340817, guid: 8755241a84167aa47ace7a80446be7c2, type: 3}
   - {fileID: 2134499934452212002, guid: b8520b828ada2af43b9b623a2bb30462, type: 3}
   - {fileID: 4509076422643665717, guid: a5f3a586d7e776d4b82dd7b07552110a, type: 3}
-  spawnRates:
-  - 0.5
-  - 0.5
-  - 0.5
-  - 0.1
-  - 0.5
-  minSpawnTime: 1
-  maxSpawnTime: 5
 --- !u!4 &1645195085
 Transform:
   m_ObjectHideFlags: 0
